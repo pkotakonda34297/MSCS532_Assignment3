@@ -1,0 +1,42 @@
+# README - Algorithm Efficiency and Scalability Analysis
+
+## Overview
+This project analyzes and compares the efficiency and scalability of two key algorithms: Randomized Quicksort and Hashing with Chaining. The goal was to implement these algorithms and evaluate their performance on various input sizes and distributions. The Randomized Quicksort algorithm was compared with the Deterministic Quicksort, while the Hash Table with Chaining was tested for insert, search, and delete operations.
+
+## Findings
+1. **Randomized Quicksort:**
+   - Randomized Quicksort showed consistent and stable performance across various input sizes and distributions (random, sorted, reverse-sorted, and repeated elements).
+   - The algorithm maintained (O(n log n)) time complexity, performing faster than Deterministic Quicksort for sorted and reverse-sorted arrays due to its random pivot selection.
+   - Deterministic Quicksort experienced inefficiencies with sorted and reverse-sorted arrays, with execution times increasing significantly in these cases, reflecting (O(n^2)) behavior.
+
+2. **Hashing with Chaining:**
+   - The Hash Table implementation using chaining efficiently handled insertions, searches, and deletions with minimal collisions.
+   - The performance remained close to constant time for these operations when the load factor was low (a= 0.3), ensuring that the hash table remained balanced.
+   - Strategies for maintaining a low load factor, including resizing the table dynamically when necessary, were key to optimizing performance.
+
+## Requirements
+- Python 3.x
+- Libraries: `random`, `time`
+
+## How to Run the Code
+
+1. **Clone the Repository:**
+ 
+   git clone <repository-link>
+
+
+2. **Navigate to the Project Directory:**
+
+   cd <project-directory>
+   
+
+3. **Run the Randomized Quicksort and Hashing Code:**
+   To run the code for analyzing the algorithms:
+
+   python Randomized Quicksort.py
+   Python Hashing with Chaining.py
+
+
+
+4. **Results:**
+   The program will output the execution times of both Randomized and Deterministic Quicksort for different input sizes, as well as the hash table operations (insert, search, delete).
